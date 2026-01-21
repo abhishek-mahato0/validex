@@ -1,7 +1,7 @@
 {
   "name": "validex",
   "version": "1.0.0",
-  "description": "",
+  "description": "A schema validation library for TypeScript inspired by Zod. Includes features like type inference, runtime validation, and type-safe schema definition.",
   "main": "dist/index.js",
   "type": "module",
   "types": "dist/index.d.ts",
