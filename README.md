@@ -1,11 +1,11 @@
-# validex
+# schema-validex
 
 A lightweight, type-safe schema validation library for TypeScript, inspired by Zod.
 
 ## Installation
 
 ```bash
-npm install validex
+npm install schema-validex
 ```
 
 ## Usage
@@ -13,7 +13,7 @@ npm install validex
 ### Basic Usage
 
 ```typescript
-import v from 'validex';
+import v from 'schema-validex';
 
 const schema = v.string().min(3).max(10);
 const result = schema.safeParse("hello");
@@ -30,7 +30,7 @@ if (result.success) {
 Here's a comprehensive example simulating a user registration form that uses most of the available validation features:
 
 ```typescript
-import v from 'validex';
+import v from 'schema-validex';
 
 const registrationSchema = v.object({
   // String validations

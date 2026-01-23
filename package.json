@@ -1,6 +1,6 @@
 {
-  "name": "validex",
-  "version": "1.0.0",
+  "name": "schema-validex",
+  "version": "1.0.3",
   "description": "A schema validation library for TypeScript inspired by Zod. Includes features like type inference, runtime validation, and type-safe schema definition.",
   "main": "dist/index.js",
   "type": "module",
@@ -8,6 +8,12 @@
   "files": [
     "dist"
   ],
+  "exports": {
+    ".": {
+      "import": "./dist/index.js",
+      "types": "./dist/index.d.ts"
+    }
+  },
   "scripts": {
     "build": "tsc",
     "start": "tsc && node dist/index.js"
@@ -24,7 +30,8 @@
     "json-validation",
     "zod-like",
     "ts-schema",
-    "input-validation"
+    "input-validation",
+    "schema validation"
   ],
   "author": "Abhishek Mahato",
   "license": "ISC",
